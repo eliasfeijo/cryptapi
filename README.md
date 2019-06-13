@@ -1,24 +1,33 @@
-# README
+# CryptAPI
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Read the requirements below before running the application.
 
-Things you may want to cover:
+Made with:
 
-* Ruby version
+- [Ruby](https://www.ruby-lang.org/) version 2.5.1
+- [Rails](https://rubyonrails.org/) version 5.2.3
 
-* System dependencies
+## Requirements
 
-* Configuration
+After cloning the repo, `cd` into the directory. Create a file named `.env` and insert the following variables:
+```
+COINMARKETCAP_API_KEY=<your API key here>
+CRYPTO_API_DEFAULT_CURRENCY=BRL
+```
 
-* Database creation
+`COINMARKETCAP_API_KEY` is the [CoinMarketCap](https://sandbox.coinmarketcap.com/) API Key.
+`CRYPTO_API_DEFAULT_CURRENCY` should be `BRL` or `USD`.
 
-* Database initialization
+## Compile and run
 
-* How to run the test suite
+Run `rails db:migrate` and then `rails s`.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Routes
 
-* Deployment instructions
+There are two routes defined:
 
-* ...
+- GET /api/v1/crypto_coins
+- PUT /api/v1/crypto_coins
+
+The `GET` request returns a JSON with the list of CryptoCoins.
+The `PUT` request updates the list of CryptoCoins, and takes an optional `currency` parameter.
