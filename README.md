@@ -12,11 +12,11 @@ Made with:
 After cloning the repo, `cd` into the directory. Create a file named `.env` and insert the following variables:
 ```
 COINMARKETCAP_API_KEY=<your API key here>
-CRYPTO_API_DEFAULT_CURRENCY=BRL
+CRYPT_API_DEFAULT_CURRENCY=BRL
 ```
 
 `COINMARKETCAP_API_KEY` is the [CoinMarketCap](https://sandbox.coinmarketcap.com/) API Key.
-`CRYPTO_API_DEFAULT_CURRENCY` should be `BRL` or `USD`.
+`CRYPT_API_DEFAULT_CURRENCY` should be `BRL` or `USD`.
 
 ## Compile and run
 
