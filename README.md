@@ -20,7 +20,7 @@ CRYPTO_API_DEFAULT_CURRENCY=BRL
 
 ## Compile and run
 
-Run `rails db:migrate` and then `rails s`.
+Run `rails db:migrate` and then `rails server -b 0.0.0.0`.
 
 ## Routes
 
