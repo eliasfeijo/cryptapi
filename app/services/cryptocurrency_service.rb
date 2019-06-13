@@ -1,7 +1,7 @@
 require 'net/http'
 
 class CryptocurrencyService
-  def initialize (currency="BRL")
+  def initialize (currency=ENV["CRYPTO_API_DEFAULT_CURRENCY"])
     @currency = currency
     puts "CryptocurrencyService started with currency: #{@currency}"
   end
